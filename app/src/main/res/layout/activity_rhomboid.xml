@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:id = "@+id/Rhom_layout">
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="true"
+        android:id="@+id/rhom_Image"
+        />
+
+    <SeekBar
+        android:id="@+id/seekBar_1"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:progress="50"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:minHeight="3dp"
+        android:maxHeight="3dp"
+        android:progressDrawable="@drawable/custom_slider"
+        android:thumb="@drawable/purple_scrubber_control"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"/>
+
+    <SeekBar
+        android:id="@+id/seekBar_2"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:progress="50"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:minHeight="3dp"
+        android:maxHeight="3dp"
+        android:progressDrawable="@drawable/custom_slider"
+        android:thumb = "@drawable/purple_scrubber_control"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+
+
+    <SeekBar
+        android:id="@+id/seekBar_3"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:progress="50"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:minHeight="3dp"
+        android:maxHeight="3dp"
+        android:progressDrawable="@drawable/custom_slider"
+        android:thumb="@drawable/purple_scrubber_control"
+        android:layout_alignTop="@+id/bar"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>
