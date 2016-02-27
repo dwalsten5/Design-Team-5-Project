@@ -4,16 +4,13 @@ import android.content.ClipData;
 import android.content.ClipDescription;
 import android.content.Intent;
 import android.graphics.Bitmap;
-import android.graphics.Point;
 import android.graphics.drawable.BitmapDrawable;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.view.DragEvent;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.ImageView;
-import android.widget.RelativeLayout;
 import android.widget.SeekBar;
 import android.widget.TextView;
 
@@ -94,7 +91,7 @@ public class RhomboidActivity extends AppCompatActivity {
         });
 
         new_flap = (RhomboidFlap) findViewById(R.id.flap);
-        /*
+
         new_flap.setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
@@ -117,7 +114,7 @@ public class RhomboidActivity extends AppCompatActivity {
                 return true;
             }
         });
-        */
+
 
         for (int i = 0; i < 3; i++) {
             final double specific_range = bounds.get(i)[1] - bounds.get(i)[0];

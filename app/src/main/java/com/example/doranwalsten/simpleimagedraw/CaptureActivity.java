@@ -2,16 +2,11 @@ package com.example.doranwalsten.simpleimagedraw;
 
 import android.content.Intent;
 import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.os.Bundle;
 import android.provider.MediaStore;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.view.View;
-import android.widget.GridView;
-import android.widget.ListView;
-import android.widget.RelativeLayout;
-import android.widget.TableLayout;
-
-import java.util.ArrayList;
 
 public class CaptureActivity extends AppCompatActivity {
 
@@ -39,7 +34,13 @@ public class CaptureActivity extends AppCompatActivity {
     }
 
     public void captureButtonClicked(View view) {
-        dispatchTakePictureIntent();
+        Intent goToEdit = new Intent(CaptureActivity.this, EditImage.class);
+        Bitmap icon = BitmapFactory.decodeResource(getResources(),
+                R.drawable.doran);
+        icon = Bitmap.createScaledBitmap(icon,50,50, true);
+        goToEdit.putExtra("Background",icon);
+        startActivity(goToEdit);
+        //dispatchTakePictureIntent();
 
     }
 
